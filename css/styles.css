@@ -1,0 +1,585 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap");
+/*GENERAL*/
+/*OPERACIONES*/
+body {
+  margin: 0px; }
+
+.white {
+  color: white; }
+
+.enh1 {
+  /*OPERACIONES*/
+  font-family: "Ubuntu Mono", monospace;
+  font-size: 4rem;
+  font-weight: 700;
+  /*OPERACIONES*/
+  color: #ffbe00;
+  text-transform: uppercase;
+  text-align: center; }
+
+/*OPERACIONES*/
+.navi {
+  /*OPERACIONES*/
+  background-color: white;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white; }
+  .navi .navi__logo {
+    /*OPERACIONES*/
+    width: 100%;
+    min-width: 150px;
+    max-width: 250px; }
+  .navi ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; }
+    .navi ul li {
+      text-align: center;
+      position: relative;
+      /*margin: 0px 8px;*/ }
+      .navi ul li a {
+        width: 90px;
+        height: 50px;
+        line-height: 50px;
+        display: block;
+        text-decoration: none;
+        color: #ffbe00;
+        font-size: 1.25rem;
+        font-weight: 400;
+        /*OPERACIONES*/
+        font-family: "Ubuntu Mono", monospace;
+        text-transform: uppercase; }
+      .navi ul li a:link {
+        outline: none; }
+
+@media screen and (min-width: 768px) {
+  .navi {
+    flex-direction: row; }
+    .navi ul li a {
+      width: 110px;
+      height: 50px;
+      line-height: 50px;
+      display: block;
+      text-decoration: none;
+      color: #ffbe00;
+      font-size: 1.25rem;
+      font-weight: 400;
+      text-transform: uppercase; }
+    .navi ul li a:hover {
+      color: #ffbe00;
+      background-color: #f0f0f0; }
+    .navi ul li a:hover ~ .link-active::before {
+      width: 100%; }
+    .navi ul li:last-child {
+      margin-right: 1rem; }
+  /*efecto para enlaces*/
+  .link-active::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffbe00;
+    transition: 0.4s ease width; } }
+
+/*OPERACIONES*/
+footer {
+  /*OPERACIONES*/
+  background-color: #202020;
+  padding: 25px; }
+  footer .footer__social .a {
+    width: 200px; }
+    footer .footer__social .a a {
+      text-decoration: none; }
+      footer .footer__social .a a p {
+        padding: 5px;
+        margin: 0;
+        font-weight: lighter;
+        color: #ffbe00;
+        font-family: "Ubuntu Mono", monospace; }
+  footer .footer__social .b {
+    display: flex;
+    /*OPERACIONES*/
+    height: 100%; }
+    footer .footer__social .b p {
+      color: #ffbe00;
+      padding: 5px;
+      margin: 0;
+      font-family: "Ubuntu Mono", monospace; }
+    footer .footer__social .b a i {
+      font-size: 1.5rem;
+      color: white; }
+  footer .news form label {
+    font-family: "Ubuntu Mono", monospace;
+    color: #ffbe00;
+    padding: 5px;
+    margin: 0; }
+
+.politica {
+  font-family: "Ubuntu Mono", monospace;
+  margin: 45px; }
+  .politica h1 {
+    font-size: 50px;
+    color: #ffbe00; }
+  .politica h2 {
+    color: rgba(0, 20, 40, 0.9); }
+  .politica p {
+    color: rgba(0, 20, 40, 0.9); }
+
+/*Inicio*/
+.inicio .carousel-item .carousel-caption .welcome {
+  color: #ffbe00;
+  /*OPERACIONES*/
+  font-family: "Ubuntu Mono", monospace;
+  text-align: center;
+  font-size: 50px; }
+
+.inicio .carousel-item .carousel-caption h2 {
+  color: #ffbe00;
+  /*OPERACIONES*/
+  font-family: "Ubuntu Mono", monospace;
+  text-align: center; }
+
+.inicio .carousel-item .carousel-caption .acontacto {
+  text-decoration: none; }
+
+.inicio .carousel-item .carousel-caption p {
+  text-align: center;
+  text-align-last: center;
+  /*OPERACIONES*/
+  font-family: "Ubuntu Mono", monospace; }
+
+.inicio .carousel-item img {
+  object-fit: cover;
+  height: 90vh; }
+
+/*MENU*/
+.elmenu .carousel-item .carousel-caption h2 {
+  color: #ffbe00;
+  /*OPERACIONES*/
+  font-family: "Ubuntu Mono", monospace;
+  text-align: center; }
+
+.elmenu .carousel-item .carousel-caption p {
+  text-align: center;
+  text-align-last: center;
+  /*OPERACIONES*/
+  font-family: "Ubuntu Mono", monospace; }
+
+.elmenu .carousel-item img {
+  object-fit: cover;
+  height: 80vh; }
+
+/*  CLIENTS     */
+.clients {
+  /*OPERACIONES*/
+  width: 100%; }
+  .clients .clients__container .clients__container__images {
+    margin: auto;
+    /*OPERACIONES*/
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 320px);
+    justify-content: center; }
+    .clients .clients__container .clients__container__images img {
+      display: block;
+      margin: 0;
+      width: 320px;
+      height: 320px;
+      object-fit: cover; }
+      .clients .clients__container .clients__container__images img img:nth-child(2) {
+        object-position: left; }
+      .clients .clients__container .clients__container__images img img:nth-child(5) {
+        object-position: top; }
+
+@media screen and (min-width: 992px) {
+  .Images-Container img:nth-child(5) {
+    grid-row: 1 / span 2;
+    height: 640px; } }
+
+/*CONTACTO*/
+.form-section {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  background-color: slateblue;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.form-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.form-image:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(225deg, #001428, #FFBE00);
+  z-index: 1;
+  mix-blend-mode: screen; }
+
+.form-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+.form-box {
+  width: 80%;
+  /*height: 80%;*/
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 20, 40, 0.9);
+  border-radius: 1rem; }
+
+.form-box__container {
+  width: 80%; }
+
+.form__title {
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: "Ubuntu Mono", monospace;
+  color: #ffbe00;
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.form__item {
+  box-sizing: border-box;
+  width: 80%;
+  margin: 2rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  /* para que no colapse */
+  border: none;
+  position: relative; }
+
+.form__item i {
+  font-size: 1.2rem;
+  width: 8%;
+  padding: 5px;
+  /* order: 1 Lo coloco primero */
+  order: 1;
+  color: #ddd;
+  transition: 0.5s ease all; }
+
+.form__item input {
+  width: 92%;
+  order: 2;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  font-size: 1.2rem;
+  color: #ddd;
+  font-family: "Ubuntu Mono", monospace; }
+
+.form__item input:focus {
+  outline: none; }
+
+.form__item label {
+  position: absolute;
+  top: .6rem;
+  left: 3rem;
+  transition: .5s ease all;
+  pointer-events: none;
+  color: #ddd;
+  font-size: 1.2rem;
+  font-family: "Ubuntu Mono", monospace; }
+
+.form__item .form__border-active {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; }
+
+.form__item .form__border-active::before {
+  content: '';
+  width: 0%;
+  height: 2px;
+  /* position: absolute sale del flujo, no necesito ponerle order y funciona mejor el nowrap, sino no funciona bien. */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(90deg, #ffbe00 60%, #ff6400 100%);
+  transition: 0.4s ease width; }
+
+.form__item textarea {
+  width: 92%;
+  height: 20px;
+  order: 2;
+  border: none;
+  outline: none;
+  padding: 10px;
+  background-color: transparent;
+  resize: none;
+  font-size: 1.2rem;
+  color: #ddd;
+  font-family: 'Ubuntu Mono', monospace; }
+
+.form__item input:focus ~ .form__border-active::before,
+.form__item input:valid ~ .form__border-active::before,
+.form__item textarea:focus ~ .form__border-active::before,
+.form__item textarea:valid ~ .form__border-active::before {
+  width: 100%; }
+
+.form__item input:focus ~ label,
+.form__item input:valid ~ label,
+.form__item textarea:focus ~ label,
+.form__item textarea:valid ~ label {
+  top: -1.1rem;
+  left: 0;
+  font-size: 1rem;
+  color: #ffbe00; }
+
+.form__item input:focus ~ i,
+.form__item input:valid ~ i,
+.form__item textarea:focus ~ i,
+.form__item textarea:valid ~ i {
+  color: #ffbe00; }
+
+@media screen and (min-width: 768px) {
+  .form-section {
+    height: 600px; }
+  .form-image:before {
+    height: 600px; }
+  .form-image {
+    width: 50%;
+    height: 100%;
+    position: relative; }
+  .form-box {
+    width: 50%;
+    height: 100%;
+    position: static;
+    background: #001428;
+    border-radius: 0; } }
+
+.form__button {
+  width: 100%;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Ubuntu Mono", monospace; }
+
+.btn-neon {
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+  margin: .5rem auto;
+  padding: 15px 30px;
+  color: #fff;
+  letter-spacing: 4px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  transition: 0.2s;
+  background: #ffbe00;
+  border-radius: .5rem;
+  box-shadow: 0 0 10px #ffbe00, 0 0 10px #ffbe00, 0 0 20px #ffbe00; }
+
+.btn-neon:hover {
+  background: #ffbe00;
+  box-shadow: 0 0 10px #ffbe00, 0 0 40px #ffbe00, 0 0 80px #ffbe00;
+  transition-delay: 1s; }
+
+.btn-neon span {
+  position: absolute;
+  display: block; }
+
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #ffbe00); }
+
+.btn-neon:hover #span1 {
+  left: 100%;
+  transition: 1s; }
+
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #ffbe00); }
+
+.btn-neon:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s; }
+
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #ffbe00); }
+
+.btn-neon:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s; }
+
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #ffbe00); }
+
+@media screen and (min-width: 992px) {
+  .btn-neon {
+    background: transparent;
+    border-radius: .5rem;
+    box-shadow: 0 0 0 transparent; }
+  .btn-neon:hover {
+    background: #ffbe00;
+    box-shadow: 0 0 10px #ffbe00, 0 0 40px #ffbe00, 0 0 80px #ffbe00;
+    transition-delay: 1s; }
+  .btn-neon span {
+    position: absolute;
+    display: block; }
+  #span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #ffbe00); }
+  .btn-neon:hover #span1 {
+    left: 100%;
+    transition: 1s; }
+  #span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #ffbe00); }
+  .btn-neon:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s; }
+  #span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #ffbe00); }
+  .btn-neon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s; }
+  #span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #ffbe00); } }
+
+.btn-neon:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s; }
+
+/*
+.form-section__title {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 190, 0);
+}*/
+.map-container {
+  margin: 3rem auto;
+  width: 100%; }
+
+.map {
+  width: 100%;
+  height: 300px; }
+
+@media screen and (min-width: 768px) {
+  .map-container {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .map {
+    width: 50%;
+    height: 300px; } }
+
+/*    NOSOTROS    */
+.sectionUs {
+  /*OPERACIONES*/
+  width: 100%; }
+
+.us__contact {
+  margin-top: 5rem;
+  /*OPERACIONES*/
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  /*     background-color: violet; */ }
+  .us__contact .us__image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 320px; }
+    .us__contact .us__image-container .us__image img {
+      display: block;
+      width: 320px;
+      height: 320px;
+      object-fit: cover; }
+  .us__contact .us__contact-info {
+    width: 320px;
+    text-align: center;
+    padding: 1rem; }
+    .us__contact .us__contact-info h3 {
+      text-transform: uppercase;
+      /*OPERACIONES*/
+      margin-bottom: 0.5rem;
+      font-family: "Ubuntu Mono", monospace; }
+    .us__contact .us__contact-info p {
+      /*OPERACIONES*/
+      font-family: "Ubuntu Mono", monospace; }
+
+.us__contact:nth-child(odd) .us__image {
+  background-color: #ffbe00; }
+
+.us__contact:nth-child(even) .us__image {
+  background-color: #ff6400; }
+
+@media screen and (min-width: 992px) {
+  .us__contact {
+    width: 80%;
+    margin: 5rem auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .us__image-container {
+    width: 30%; }
+  .us__image img {
+    position: relative;
+    top: -25px;
+    left: 25px; }
+  .us__contact-info {
+    width: 60%;
+    max-width: 500px;
+    text-align: left; } }

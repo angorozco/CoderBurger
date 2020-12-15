@@ -1,0 +1,750 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital,wght@0,400;1,700&display=swap');
+
+/*GENERAL*/
+
+
+/*OPERACIONES*/
+
+$font1: 'Ubuntu Mono',
+monospace;
+$color1: rgba(255,
+190,
+0,
+1);
+$color2: white;
+$color3: rgba(0,
+20,
+40,
+.9);
+$fiverem: 5rem;
+body {
+    margin: 0px;
+}
+
+.white {
+    color: $color2;
+}
+
+.enh1 {
+    /*OPERACIONES*/
+    font-family: $font1;
+    font-size: ($fiverem)-1;
+    font-weight: 700;
+    /*OPERACIONES*/
+    color: $color1;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+/*OPERACIONES*/
+
+$widthfull: 100%;
+.navi {
+    /*OPERACIONES*/
+    background-color: $color2;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color2;
+    .navi__logo {
+        /*OPERACIONES*/
+        width: $widthfull;
+        min-width: 150px;
+        max-width: 250px;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        li {
+            text-align: center;
+            position: relative;
+            /*margin: 0px 8px;*/
+            a {
+                width: 90px;
+                height: 50px;
+                line-height: 50px;
+                display: block;
+                text-decoration: none;
+                color: $color1;
+                font-size: ($fiverem)/4;
+                font-weight: 400;
+                /*OPERACIONES*/
+                font-family: $font1;
+                text-transform: uppercase;
+            }
+            a:link {
+                outline: none;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navi {
+        flex-direction: row;
+        ul {
+            li {
+                a {
+                    width: 110px;
+                    height: 50px;
+                    line-height: 50px;
+                    display: block;
+                    text-decoration: none;
+                    color: $color1;
+                    font-size: ($fiverem)/4;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                }
+                a:hover {
+                    color: $color1;
+                    background-color: rgb(240, 240, 240);
+                }
+                a:hover~.link-active::before {
+                    width: $widthfull;
+                }
+            }
+            li:last-child {
+                margin-right: ($fiverem)-4;
+            }
+        }
+    }
+    /*efecto para enlaces*/
+    .link-active::before {
+        content: '';
+        width: 0%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: $color1;
+        transition: 0.4s ease width;
+    }
+}
+
+
+/*OPERACIONES*/
+
+$footerColor: #202020;
+$heightfull: 100%;
+footer {
+    /*OPERACIONES*/
+    background-color: $footerColor;
+    padding: 25px;
+    .footer__social {
+        .a {
+            width: 200px;
+            a {
+                text-decoration: none;
+                p {
+                    padding: 5px;
+                    margin: 0;
+                    font-weight: lighter;
+                    color: $color1;
+                    font-family: $font1;
+                }
+            }
+        }
+        .b {
+            display: flex;
+            /*OPERACIONES*/
+            height: $heightfull;
+            p {
+                color: $color1;
+                padding: 5px;
+                margin: 0;
+                font-family: $font1;
+            }
+            a {
+                i {
+                    font-size: 1.5rem;
+                    color: $color2;
+                }
+            }
+        }
+    }
+    .news {
+        form {
+            label {
+                font-family: $font1;
+                color: $color1;
+                padding: 5px;
+                margin: 0;
+            }
+        }
+    }
+}
+
+.politica {
+    font-family: $font1;
+    margin: 45px;
+    h1 {
+        font-size: 50px;
+        color: $color1;
+    }
+    h2 {
+        color: $color3;
+    }
+    p {
+        color: $color3;
+    }
+}
+
+
+/*Inicio*/
+
+.inicio {
+    .carousel-item {
+        .carousel-caption {
+            .welcome {
+                color: $color1;
+                /*OPERACIONES*/
+                font-family: $font1;
+                text-align: center;
+                font-size: 50px;
+            }
+            h2 {
+                color: $color1;
+                /*OPERACIONES*/
+                font-family: $font1;
+                text-align: center;
+            }
+            .acontacto {
+                text-decoration: none;
+            }
+            p {
+                text-align: center;
+                text-align-last: center;
+                /*OPERACIONES*/
+                font-family: $font1
+            }
+        }
+        img {
+            object-fit: cover;
+            height: 90vh;
+        }
+    }
+}
+
+
+/*MENU*/
+
+.elmenu {
+    .carousel-item {
+        .carousel-caption {
+            h2 {
+                color: $color1;
+                /*OPERACIONES*/
+                font-family: $font1;
+                text-align: center;
+            }
+            p {
+                text-align: center;
+                text-align-last: center;
+                /*OPERACIONES*/
+                font-family: $font1
+            }
+        }
+        img {
+            object-fit: cover;
+            height: 80vh;
+        }
+    }
+}
+
+
+/*  CLIENTS     */
+
+.clients {
+    /*OPERACIONES*/
+    width: $widthfull;
+    .clients__container {
+        .clients__container__images {
+            margin: auto;
+            /*OPERACIONES*/
+            width: $widthfull;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 320px);
+            justify-content: center;
+            img {
+                display: block;
+                margin: 0;
+                width: 320px;
+                height: 320px;
+                object-fit: cover;
+                img:nth-child(2) {
+                    object-position: left;
+                }
+                img:nth-child(5) {
+                    object-position: top;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) {
+    .Images-Container img:nth-child(5) {
+        grid-row: 1 / span 2;
+        height: 640px;
+    }
+}
+
+
+/*CONTACTO*/
+
+.form-section {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-color: slateblue;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.form-image:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(225deg, #001428, #FFBE00);
+    z-index: 1;
+    mix-blend-mode: screen;
+}
+
+.form-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-box {
+    width: 80%;
+    /*height: 80%;*/
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 20, 40, .9);
+    border-radius: 1rem;
+}
+
+.form-box__container {
+    width: 80%;
+}
+
+.form__title {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    font-family: $font1;
+    color: rgba(255, 190, 0, 1);
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.form__item {
+    box-sizing: border-box;
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* para que no colapse */
+    border: none;
+    position: relative;
+}
+
+.form__item i {
+    font-size: 1.2rem;
+    width: 8%;
+    padding: 5px;
+    /* order: 1 Lo coloco primero */
+    order: 1;
+    color: #ddd;
+    transition: 0.5s ease all;
+}
+
+.form__item input {
+    width: 92%;
+    order: 2;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 1.2rem;
+    color: #ddd;
+    font-family: $font1;
+}
+
+.form__item input:focus {
+    outline: none;
+}
+
+.form__item label {
+    position: absolute;
+    top: .6rem;
+    left: 3rem;
+    transition: .5s ease all;
+    pointer-events: none;
+    color: #ddd;
+    font-size: 1.2rem;
+    font-family: $font1;
+}
+
+.form__item .form__border-active {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.form__item .form__border-active::before {
+    content: '';
+    width: 0%;
+    height: 2px;
+    /* position: absolute sale del flujo, no necesito ponerle order y funciona mejor el nowrap, sino no funciona bien. */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(90deg, rgba(255, 190, 0, 1) 60%, rgba(255, 100, 0, 1) 100%);
+    transition: 0.4s ease width;
+}
+
+.form__item textarea {
+    width: 92%;
+    height: 20px;
+    order: 2;
+    border: none;
+    outline: none;
+    padding: 10px;
+    background-color: transparent;
+    resize: none;
+    font-size: 1.2rem;
+    color: #ddd;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.form__item input:focus~.form__border-active::before,
+.form__item input:valid~.form__border-active::before,
+.form__item textarea:focus~.form__border-active::before,
+.form__item textarea:valid~.form__border-active::before {
+    width: 100%;
+}
+
+.form__item input:focus~label,
+.form__item input:valid~label,
+.form__item textarea:focus~label,
+.form__item textarea:valid~label {
+    top: -1.1rem;
+    left: 0;
+    font-size: 1rem;
+    color: rgba(255, 190, 0, 1);
+}
+
+.form__item input:focus~i,
+.form__item input:valid~i,
+.form__item textarea:focus~i,
+.form__item textarea:valid~i {
+    color: rgb(255, 190, 0);
+}
+
+@media screen and (min-width:768px) {
+    .form-section {
+        height: 600px;
+    }
+    .form-image:before {
+        height: 600px;
+    }
+    .form-image {
+        width: 50%;
+        height: 100%;
+        position: relative;
+    }
+    .form-box {
+        width: 50%;
+        height: 100%;
+        position: static;
+        background: rgb(0, 20, 40);
+        border-radius: 0;
+    }
+}
+
+.form__button {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: $font1;
+}
+
+.btn-neon {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    margin: .5rem auto;
+    padding: 15px 30px;
+    color: #fff;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    background: rgb(255, 190, 0);
+    border-radius: .5rem;
+    box-shadow: 0 0 10px rgb(255, 190, 0), 0 0 10px rgb(255, 190, 0), 0 0 20px rgb(255, 190, 0);
+}
+
+.btn-neon:hover {
+    background: rgb(255, 190, 0);
+    box-shadow: 0 0 10px rgb(255, 190, 0), 0 0 40px rgb(255, 190, 0), 0 0 80px rgb(255, 190, 0);
+    transition-delay: 1s;
+}
+
+.btn-neon span {
+    position: absolute;
+    display: block;
+}
+
+#span1 {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, rgb(255, 190, 0));
+}
+
+.btn-neon:hover #span1 {
+    left: 100%;
+    transition: 1s;
+}
+
+#span3 {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, rgb(255, 190, 0));
+}
+
+.btn-neon:hover #span3 {
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+
+#span2 {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, rgb(255, 190, 0));
+}
+
+.btn-neon:hover #span2 {
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+
+#span4 {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, rgb(255, 190, 0));
+}
+
+@media screen and (min-width:992px) {
+    .btn-neon {
+        background: transparent;
+        border-radius: .5rem;
+        box-shadow: 0 0 0 transparent;
+    }
+    .btn-neon:hover {
+        background: rgb(255, 190, 0);
+        box-shadow: 0 0 10px rgb(255, 190, 0), 0 0 40px rgb(255, 190, 0), 0 0 80px rgb(255, 190, 0);
+        transition-delay: 1s;
+    }
+    .btn-neon span {
+        position: absolute;
+        display: block;
+    }
+    #span1 {
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, transparent, rgb(255, 190, 0));
+    }
+    .btn-neon:hover #span1 {
+        left: 100%;
+        transition: 1s;
+    }
+    #span3 {
+        bottom: 0;
+        right: -100%;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(270deg, transparent, rgb(255, 190, 0));
+    }
+    .btn-neon:hover #span3 {
+        right: 100%;
+        transition: 1s;
+        transition-delay: 0.5s;
+    }
+    #span2 {
+        top: -100%;
+        right: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(180deg, transparent, rgb(255, 190, 0));
+    }
+    .btn-neon:hover #span2 {
+        top: 100%;
+        transition: 1s;
+        transition-delay: 0.25s;
+    }
+    #span4 {
+        bottom: -100%;
+        left: 0;
+        width: 2px;
+        height: 100%;
+        background: linear-gradient(360deg, transparent, rgb(255, 190, 0));
+    }
+}
+
+.btn-neon:hover #span4 {
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+
+
+/*
+.form-section__title {
+    text-align: center;
+    font-size: 3rem;
+    color: rgb(255, 190, 0);
+}*/
+
+.map-container {
+    margin: 3rem auto;
+    width: 100%;
+}
+
+.map {
+    width: 100%;
+    height: 300px;
+}
+
+@media screen and (min-width:768px) {
+    .map-container {
+        width: 100%;
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .map {
+        width: 50%;
+        height: 300px;
+    }
+}
+
+
+/*    NOSOTROS    */
+
+.sectionUs {
+    /*OPERACIONES*/
+    width: $widthfull;
+}
+
+.us__contact {
+    margin-top: $fiverem;
+    /*OPERACIONES*/
+    width: $widthfull;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /*     background-color: violet; */
+    .us__image-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        .us__image {
+            img {
+                display: block;
+                width: 320px;
+                height: 320px;
+                object-fit: cover;
+            }
+        }
+    }
+    .us__contact-info {
+        width: 320px;
+        text-align: center;
+        padding: ($fiverem)-4;
+        h3 {
+            text-transform: uppercase;
+            /*OPERACIONES*/
+            margin-bottom: ($fiverem)/10;
+            font-family: $font1;
+        }
+        p {
+            /*OPERACIONES*/
+            font-family: $font1;
+        }
+    }
+}
+
+.us__contact:nth-child(odd) .us__image {
+    background-color: rgba(255, 190, 0, 1);
+}
+
+.us__contact:nth-child(even) .us__image {
+    background-color: rgba(255, 100, 0, 1);
+}
+
+@media screen and (min-width:992px) {
+    .us__contact {
+        width: 80%;
+        margin: 5rem auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+    .us__image-container {
+        width: 30%;
+    }
+    .us__image img {
+        position: relative;
+        top: -25px;
+        left: 25px;
+    }
+    .us__contact-info {
+        width: 60%;
+        max-width: 500px;
+        text-align: left;
+    }
+}
