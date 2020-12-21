@@ -269,5 +269,13 @@
     "yargs": "^13.3.2",
     "xdg-basedir": "^4.0.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/angorozco/CoderBurger.git"
+  },
+  "bugs": {
+    "url": "https://github.com/angorozco/CoderBurger/issues"
+  },
+  "homepage": "https://github.com/angorozco/CoderBurger#readme",
   "description": ""
 }

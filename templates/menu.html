@@ -23,33 +23,32 @@
 
 <body>
     <!--beginning of the header-->
-    <header>
-        <!--beginning of the menu-->
-        <nav class="navi col-12 d-flex flex-column flex-md-row justify-content-md-between text-center">
-            <a href="../index.html">
-                <!--the logo-->
-                <img class="navi__logo" src="../img/logopagina.png" alt="">
-            </a>
-            <ul>
-                <li>
-                    <a href="us.html">Nosotros</a>
-                    <div class="link-active"></div>
-                </li>
-                <li>
-                    <a href="menu.html">Menú</a>
-                    <div class="link-active"></div>
-                </li>
-                <li>
-                    <a href="clients.html">Clientes</a>
-                    <div class="link-active"></div>
-                </li>
-                <li>
-                    <a href="contact.html">Contacto</a>
-                    <div class="link-active"></div>
-                </li>
-            </ul>
-        </nav>
-        <!--ending of the menu-->
+    <header class="containerHome">
+        <div class="navegacion">
+            <nav>
+                <a href="../index.html">
+                    <img class="logomenu" src="../img/logopagina.png" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a class="nav__link" href="us.html">Nosotros</a>
+                        <div class="link-active"></div>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="menu.html">Menú</a>
+                        <div class="link-active"></div>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="clients.html">Clientes</a>
+                        <div class="link-active"></div>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="contact.html">Contacto</a>
+                        <div class="link-active"></div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <!--ending of the header-->
@@ -102,28 +101,49 @@
 
     </section>
     <!--beginning of the footer-->
-    <footer class="footer container-fluid">
-        <div class="footer__social row">
-            <div class="col-12 d-block ">
-                <div class="a ">
-                    <a href="templates/politica.html">
-                        <p>Política de Privacidad</p>
-                    </a>
+    <footer class="footer">
+        <div class="footer__info">
+            <div class="footer__newsletter">
+                <p>¡Ingresa tu mail para mantenerte actualizado acerca de hamburguesas nuevas y promociones!</p>
+                <div class="footer__form-container">
+                    <div class="form__item">
+                        <input type="text" required>
+                        <label for="name">Escriba su email</label>
+                        <i class="fas fa-envelope"></i>
+                        <div class="form__border-active"></div>
+
+                    </div>
+                    <div class="form__item">
+                        <input type="submit" value="Enviar">
+                    </div>
                 </div>
-                <div class="b">
-                    <p>Encuentranos en:</p>
-                    <a href="https://instagram.com/coderburger">
+            </div>
+            <div class="footer__list">
+                <ul>
+                    <li><a href="empresa.html">Empresa</a></li>
+                    <li><a href="politica.html">Política de privacidad</a></li>
+                    <li><a href="legales.html">Información Legal</a></li>
+                    <li><a href="empleo.html">Empleos</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__social">
+            <div class="footer__siguenos">
+                <span>Síguenos en: </span>
+                <div class="footer-socialNetworks">
+                    <a href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/coderburger/">
                         <i class="fab fa-instagram"></i>
                     </a>
+                    <a href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
                 </div>
             </div>
-            <div class="news mx-3">
-                <form action="">
-                    <label class="" for="">Sé parte de nuestra comunidad</label>
-                    <input type="email" name="" id="" placeholder="ingresa tu mail">
-                    <input type="submit">
-                </form>
-            </div>
+            <span class="footer__rights">
+                        TM & © 2020 CoderBurger Corporation. Todos los derechos reservados.
+                    </span>
         </div>
     </footer>
     <!--ending of the footer-->
