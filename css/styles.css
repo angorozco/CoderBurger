@@ -21,9 +21,13 @@ body {
 
 .parrafo {
   font-size: 1.3rem;
-  width: 50%;
+  width: 90%;
   margin: 1rem auto;
   text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .parrafo {
+    width: 50%; } }
 
 .navegacion nav {
   display: flex;
