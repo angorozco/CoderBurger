@@ -1319,15 +1319,17 @@ footer {
       position: static;
       background: #001428;
       border-radius: 0; }
-  .contact .map-section .map-container {
-    width: 100%;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .contact .map-section .map-container .map {
-      width: 50%;
-      height: 300px; } }
+  .contact .map-section {
+    padding: 3rem 1rem; }
+    .contact .map-section .map-container {
+      width: 100%;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .contact .map-section .map-container .map {
+        width: 50%;
+        height: 300px; } }
 
 .sectionUs {
   width: 100%;
@@ -1408,9 +1410,6 @@ footer {
       margin-left: 50px; }
       .sectionUs .container .us__contact .us__contact-info .us__contact-social {
         text-align: right; }
-      .sectionUs .container .us__contact .us__contact-info .us__contact-social:nth-child(odd) i:hover {
-        color: #FFBE00;
-        text-shadow: 0 0 10px #FFBE00, 0 0 40px #FFBE00; }
     .sectionUs .container .us__contact .us__contact-info::before {
       content: '';
       position: absolute;
@@ -1421,15 +1420,18 @@ footer {
       transition: all .4s; }
   .sectionUs .container .us__contact:nth-child(odd) .us__contact-info::before {
     background-color: #ffbe00; }
+  .sectionUs .container .us__contact:nth-child(odd) .us__contact-info .us__contact-social i:hover {
+    color: #FFBE00;
+    text-shadow: 0 0 10px #FFBE00, 0 0 40px #FFBE00; }
   .sectionUs .container .us__contact:nth-child(even) .us__contact-info::before {
     background-color: #ff6400; }
+  .sectionUs .container .us__contact:nth-child(even) .us__contact-info .us__contact-social i:hover {
+    color: #ff6400;
+    text-shadow: 0 0 10px #ff6400, 0 0 40px #ff6400; }
   .sectionUs .container .us__contact:hover .us__contact-info::before {
     width: 100%;
     right: auto;
     left: 0; }
-    .sectionUs .container .us__contact:hover .us__contact-info::before .us__contact-social i:hover {
-      color: #ff6400;
-      text-shadow: 0 0 10px #ff6400, 0 0 40px #ff6400; }
   .sectionUs .container .us__contact:hover img:nth-child(1) {
     transform: translate(10px, -10px);
     opacity: .4; }
